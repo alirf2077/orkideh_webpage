@@ -32,7 +32,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
                     }        
             `}
       >
-        Home
+        خانه
       </a>
       <a
         href="#about"
@@ -43,10 +43,10 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
             }        
     `}
       >
-        About
+        امکانات
       </a>
       <a
-        href="#projects"
+        href="#facilities"
         onClick={() => setMenuOpen(false)}
         className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
             ${
@@ -54,7 +54,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
             }        
     `}
       >
-        Projects
+        اطلاعات مجموعه
       </a>
       <a
         href="#contact"

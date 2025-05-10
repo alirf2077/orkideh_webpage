@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import logo from '../assets/logo2.png'; // adjust path based on file location
 
 export const Navbar = ({ menuOpen, setMenuOpen }) => {
   useEffect(() => {
@@ -9,8 +10,10 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
       <div className="max-w-5xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <a href="#home" className="font-mono text-xl font-bold text-white">
-            {" "}
-            pedro<span className="text-blue-500">.tech</span>{" "}
+            {/* {" "} */}
+            {/* pedro<span className="text-blue-500">.tech</span>{" "} */}
+            <img src={logo} className="w-21 h-16" />
+
           </a>
 
           <div
@@ -22,33 +25,33 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
 
           <div className="hidden md:flex items-center space-x-8">
             <a
-              href="#home"
-              className="text-gray-300 hove:text-white transition-colors"
-            >
-              {" "}
-              Home
-            </a>
-            <a
               href="#about"
               className="text-gray-300 hove:text-white transition-colors"
             >
               {" "}
-              About{" "}
+              اطلاعات مجموعه
             </a>
             <a
-              href="#projects"
+              href="#facilities"
               className="text-gray-300 hove:text-white transition-colors"
             >
               {" "}
-              Projects{" "}
+             امکانات{" "}
             </a>
             <a
+              href="#home"
+              className="text-gray-300 hove:text-white transition-colors"
+            >
+              {" "}
+             خانه{" "}
+            </a>
+            {/* <a
               href="#contact"
               className="text-gray-300 hove:text-white transition-colors"
             >
               {" "}
               Contact{" "}
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
