@@ -56,7 +56,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
       >
         اطلاعات مجموعه
       </a>
-      <a
+      {/* <a
         href="#contact"
         onClick={() => setMenuOpen(false)}
         className={`text-2xl font-semibold text-white my-4 transform transition-transform duration-300
@@ -66,7 +66,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
     `}
       >
         Contact
-      </a>
+      </a> */}
     </div>
   );
 };
